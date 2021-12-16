@@ -47,8 +47,7 @@ async def on_ready():
         print(channel)
         print(channel.id)
 
-    # channel = bot.get_channel(913706828502814760)
-    channel = bot.get_channel(909833938271363142)
+    channel = bot.get_channel(913706828502814760)
     await channel.send('¡Hola!')
 
 
@@ -121,8 +120,7 @@ def writer(bot):
     print(' [*] Waiting for messages. To exit press CTRL+C')
 
     async def write(message):
-        #channel = bot.get_channel(908505071887732768)#913706828502814760
-        channel = bot.get_channel(909833938271363142)
+        channel = bot.get_channel(908505071887732768)#913706828502814760
         mens = message.split("$")
         if(len(mens)==3):
             embed = discord.Embed(
